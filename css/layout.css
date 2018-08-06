@@ -1,3 +1,4 @@
+
 /********** Fixes **********/
 
 * {
@@ -16,12 +17,42 @@
   visibility: hidden;
   height: 0;
   line-height: 0;
+  overflow: auto;
 }
 
 .clear {
   clear: both;
+  overflow: auto;
 }
 
 /* Posititoning Classes */
+.col-1{
+  float:left;
+width:64%;
+}
+.col-2{
+  float:left;
+  width:34%;
 
+}
+.col-3{
+  float:left;
+  width:31%;
+}
 
+[class*="col-"]{
+  margin-left:2%;
+  margin-bottom:2%;
+}
+.first{
+  margin-left:0;
+}
+.wrapper-1{
+  display: flex;             /* primary flex container */
+    flex-direction: row;       /* horizontal alignment of flex items
+                                      (default value; can be omitted) */
+    align-items: stretch;      /* will apply equal heights to flex items
+                                      (default value; can be omitted) */
+    height: 100%;
+    overflow:hidden;
+}
